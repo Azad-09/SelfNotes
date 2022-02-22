@@ -1,0 +1,41 @@
+Angular Concepts:--
+
+Data Binding:--
+
+1. String Interpolation :- Binding Bussiness property from .ts file to the HTML template. Not only that we can also interpolate any Words or Sentences within the 2 Curly Braces i.e {{helloWorld()}}.
+
+2. Property Binding:- Here we put the property of HTML template inside a square braces and in the right side we write the property name.
+<button btn btn-info [disabled] = 'status'</button>
+status = true;
+
+3. Event:- Here the event by the user can be captured by putting the event inside a parenthesis and use it with bussiness function like 
+<button (click)= 'onClick()'></button>
+
+4.($event):- (input) = 'onUpdate($event)' == this will type all the input that user type inside the input bar or the text space. this event work as to get the instatnt event typed by the user.
+
+5.Two-Way-Binding:- In this we combine both Property & Event Binding [(ngModel)] = "serverName"....
+Here in two way we can change the data from both from Template as well as the
+from .ts file and it will work both way.. 
+
+6. Use '--skip-tests' instead of '--skipTests'. = It is used to skip the test case in an component.
+
+*************************************************************************************************
+Questions:--
+1.What is Angular? Why was it introduced?
+2.What is TypeScript?
+3.What's the difference between Angular and AngularJS?
+4.What is data binding?
+5.What are Single Page Applications (SPA)?
+6.Differentiate between Angular and AngularJS
+7.What are decorators in Angular?
+8.Explain Components, Modules and Services in Angular
+9.How does one share data between components in Angular?
+10.Explain the concept of Dependency Injection?
+11.Mention some advantages of Angular.
+12. What are Directives in Angular?
+13.What are Components in Angular?
+14. What is an ngModule?
+15.What is String Interpolation in Angular?
+16. What are Promises and Observables in Angular? how it is differentiated?
+17.What are Template and Reactive forms?
+*************************************************************************************************

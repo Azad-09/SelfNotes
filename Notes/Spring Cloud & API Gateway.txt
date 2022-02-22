@@ -1,0 +1,36 @@
+MICROSERVICE DESIGN PATTERN::::
+
+** There are certain Design Patterns that make the working of a <Cloud Application> easy and quick.
+
+1. API Gateway Pattern
+2. Service Registry Pattern
+3. Circuit Breaker Pattern
+
+
+SPRING CLOUD::::
+
+** Spring Cloud is an open-source <Library> which provides some tools and Design Patterns that simplify the creation of the  <Cloud Application> or the application which runs on <Distributed Environment>. All the above Design Pattern is provided by the Spring Cloud. It is easyly available in the web.
+
+API Gateway::::
+
+** API Gateway is also a  service that acts as a <Single Entry Point> into the system. It is a tool that sits between the Client and the other Backend Services.
+
+** It acts as a <Reverse Proxy> that is 
+	
+	1. It accepts all API calls
+	2. After accepting it aggregate all the requests to that particular service for which the end-user demand.
+	3. After that it returns the appropriate result back to the User.
+
+ADVANTAGES::
+
+1. It insulates the clients from how the application is partitioned into Microservices.
+
+2. There may be more than 20 Services/Modules are there in an application and each Modules consist of a Unique Port Number. So it is Cumbersome process to remember all the port number which is used within a single application. So by using API Gateway we can access any Modules just by using a single port Number.
+
+3. We can change the Port Number of any Service if we want to and we don't have to inform the end-user. And even we can add a new Module also as every Module can be accessed by the same Port Number.
+
+
+DISADVANTAGES::
+
+1. Work of API Gateway is to Route the API calls only, apart from that it receives the response and return back to the end-user, but the problem is that if that particular Module is not UP or the status of the Service is Not active then it will throw an HTTP Status of 404 not founds. 
+ 

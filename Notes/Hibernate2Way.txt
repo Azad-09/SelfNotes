@@ -1,0 +1,21 @@
+Using Annotaion Hibernate for Connection Of POJO object with DataBase Table.
+
+1.Model Class = POJO; [Annotation] Mapping
+2.Hibernateutil Class(util pkg) = Configuration and SessonFactory.
+3.Main(App.class)  = Session And Transaction
+
+
+Using XML Hibernate for Connection Of POJO object with DataBase Table.
+
+1.Model Dir = POJO[regular(withoutAnnotation)].
+2.Resource Dir (hibernate.cfg.xml) = hibernate DocType(import) <hibernate-configuration><Session-Factory><Property> MappingLink= Configuration & SessonFactory 
+3.Random Dir (pojo.hbm.xml) = hibernate mapping DOCTYPE(import) <class="pojo" table=name = ""><id>Primary Element</id><property>Rest Element</property>
+4.Util(hibernateutil class) = sessionFactory
+5.DAO(pojoDAOIMPL class) = Session , Transaction 
+6.Main(app class) 
+
+
+*********************************************************************
+Keywords:
+1.ddl = data defination language. =   Create Table{}
+2.dml = data manipulation language. = manupulate / alter /delete all this command

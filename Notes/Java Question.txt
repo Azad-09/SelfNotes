@@ -1,0 +1,17 @@
+Class:- Class is a blueprint or a description/defination of an object , we can create multiple object using a particular class. An Object is an Instance of Class.
+
+Object:- Any thing which have some attributes and some unique behaviour is known as an Object for exapmle Apple is also an Object which have some attributes like its look and behaviour like it is planted in cold area.
+
+Methods:- It define behavior. It is a collection of statement group together to perform an operation.
+
+Constructor:- It is a method invoked when we have to create an Object and are used to initialize them. It is used to provide the initial value to the Object attributes. When we create a Object using constructor we create a reference variable.
+
+Math:- it is a inbuilt class by JDK so we dont need to createa a new object for using the Math Class.
+
+OOPS::
+
+Encapsulation:- It is implemented ina class in order to hide the variable of one class to the another class and this process is calles as Data Hiding.  It is accesible by the methods of their own classes using the getter and setter method. And most importantly the access specifier of this variable is set as "Private".
+
+ 
+
+ 

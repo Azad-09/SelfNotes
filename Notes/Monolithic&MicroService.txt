@@ -1,0 +1,24 @@
+MONOLITHIC::::
+
+** Monolithic Architecture is an <n-tier> application where it consists of a single application layer. It provides a single platform where the <User Interface>, as well as the <DAO>, is combined in a single program.
+
+** It is <Self Contained> and independent of any other computing application. 
+
+** Here all the <Services> are interconnected to Each other and tightly packed that is a single change in any particular service will affect all other Services.
+
+DISADVANTAGE::
+
+1. In a big application like Flipkart, if we want to add a new update then the whole application <Managment Cycle > will be redeveloped, released and deployed, and implemented all over again. in Short, it will affect all other services, we have to work upon all the services for better working.
+
+2. And for the above reason, we need to shut down the entire application, make it offline, perform the changes, test the application and make the application live again.
+
+3. To handle a bug in any of the components we have to redeploy all other components again and during that particular time the entire application go offline and that harms the User Experience and creates a loss to the Company.
+
+
+MICROSERVICE::::
+
+**MicroService is also an Architectural Style which is Modular , Autonomus and logical unit of the functionality is Independently Deployable and Scalable.
+
+**Here all the services are Autonomus that is they are not completly dependent on each other as they are <Loosely Bound> but can interact with each other when needed.
+
+**Each Microservices focuses on completing only one task and they do it perfectly. As they are loosely bound ,  so deploying a new service will not affect the flow of the application and will not affect the working of the applicationa and we dont have to make the application offline to deploy a new service hence it is <Scalable>. 

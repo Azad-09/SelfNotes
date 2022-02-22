@@ -1,0 +1,24 @@
+Development Server = It is a place where the coder have their local server and where they create their application.
+
+**In early days of coding when there is no Gitlab and CI/CD pipeline the coder start a new server and started creating their own application in the Development Server after the completion of the project they deploy the application in the Server Side so that the end user can use this applcation but after that if the coder want to update something in the app and integrate the nwe update in the repo then there is a chance that it may face some problem which can create a breakdown in the application so in order to avoid this we use CI which stand for Continious Integration where coder integrate their code continiously and this CI pipeline help the coder to detect the errors in each and every steps like the error may be in the code or during the time of merging , or in the test and building of  application etc . 
+
+** CI will not fix the bugs but it will aware the coder that in which steps he his facing the bug so that it can be terminated ASAP . It will notgo to the further step if it face any error ina particula steps. By this process only we are able to know where is the error is. 
+ 
+
+CI::::
+
+**It is a <Practise> which is carried out by all the coder who work on an industry and they share their code in a common Repository. As the name suggest here a piece of code written by each coder is <Integrated> inside a common repositiry.
+
+** Since they share common Repo so there may be a chance of error at different stages of the code it may be a error in the <Code> or while <Merging> or while <Building> the code or while <Testing> the code.
+
+** So when a coder use the code of another coder in his machine then there is a chance that it will show an error at any stage of the code . So <CI> help us to detect the error early and help us to locate that in which stage of the code there is an error.
+
+ADVANTAGES::
+
+1. Run our test in <Real World> and it will check each stages of the code and if it detects any error at any particular stage then it will give a error message.
+
+2.It is not going to resolve the error but it will helpful for <Early Detection> of the error and we can also know the particular stage where the error is there.
+
+3. It will stop the process of testing once it detect the error at any particular stage.
+
+4.It take care and increase the <Code Quality> like naming Convention , Syntax etc  

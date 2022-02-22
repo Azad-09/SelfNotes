@@ -1,0 +1,90 @@
+DOCKER::::
+
+**Docker is a software which is used to containerise all the codes and services inside a container and it is added in the form of a image so that if a code have 0 erros in a particular platform say WINDOWS then if we contain all the code after the execution then Docker with the help of its software and resource wiill gurantee the coder that that particular code will run on any other platform with the same ease without showing any error.
+
+** This is mazor issue in the IT industry because many application didn't execute properly in ever platform/ OS , the error may be anything but after using Docker it gives us a gurantee that it will run safe and without errors.
+
+*** for creating an application/website programmer works on different components of the application after that they push the code to a common repository and they were merged sequentially and placed in their respective places. So in Development Server the application may run properly but there is a chance that it may show Error in the Client side Server beacuse of any reasons like some file may lost , some file get corrupted while shiping etc . In order to avoid this kind of problem and to deliver a Proper Application to the client side and to maintain a GoodWill with the Client the components are Contenerize and shiped to the Client Server.
+
+
+DOCKER WORKING::::
+
+**When we say Docker we are talking about any particular application instead we are talking about the whole <Ecosystem of the Docker Product>
+
+**Docker Products are <Docker Client><Docker Server><Docker Machine><Docker Hub> <Docker Compose> . So with the help of all the Docker Product we create a Container.
+
+Docker Products::
+
+1.Docker Client:- Docker Client is a command promt where we have to reach and write <Command Line Interface> (CLI)  in order to reach to the <Docker Server> because we can't reache to the Docker Server directly in order to get the desired output, we always have to access to the Docker server via Docker Client(CLI) by writting ClI command.
+
+2.Docker Server:- So after getting the request from the <Docker Client> it start all the action like converting an <Image> to a <Container>, running the container, Stoping the continer etc is carried out by the <Docker Demon>.And it is carried out in the <Host Operating System>.
+
+3.Docker Hub:_- It is free service by docker which will provide the <Client> with the demanded image through Docker Demon and it also save the image in cache file so that whenever a particular command reused then it will not take time to load.
+
+ 
+KEYWORDS::
+
+1.Image:- 
+Image is nothig but a read-only template which consist of set of instruction which is helpful for creating a container If needed as this is not a mandotory.
+Image consist of <File System SnapShot> and <Start-Up Cmd>
+
+2.Container:- It is a process which consist of some set of Resources and a <Portion of Physical Resource> like Hard Disk , Memory, and CPU
+
+COMMANDS::
+
+1. Docker Run = docker create + docker start 
+
+2.Docker Create = will give some code (codqwe).
+
+3.Docker Start -a codqwe  = will show the image. [-a = attacj to the file and show all the inside story of the image]
+
+4 Docker Logs = we can enter any container.
+
+5. Docker Stop = to stop the container.
+
+6. Docker Kill = It will kill  the container if the container is running in a loop .
+
+7.Docker Exec -i -t <container code> sh = Exec will help to execute inside a particular container where <sh> shell is created and -i is use t go inside the file and -t is used for pretty display.
+
+8.Docker run <imageName> echo hello azad = it is used to re-write the <startup cmd>
+
+9. sudo docker kill $(sudo docker ps -q) = kill all the container inside it
+
+10.sudo docker rm $(sudo docker ps -a -q) = it will remove all the container that are used till date
+
+11. sudo docker run -d mongo:latest = it will containerize the mongo image with latest version[-d is used for detachable which means it will run in the background f the termina and it will not take any input ad display output].
+
+12.sudo docker ps  = show all the running container by default ["ps" stands for Process Status... "-a" is used to show all the container]
+
+
+DOCKER_COMPOSE::::
+
+** In an application it may be possible that there are may be 20 or more services and for each sevices we have to write 2 commands that is one for <Build> and another for <Run> (*<Pull> and <Run> in case of Databases) and also we have to write a command for <Porting> also. So in order to containerise 20 service we have to write around 100 command which is a cumbersome process.
+
+** In order to ease the process we use Docker Compose where we have to write only 2 commands in order to make all the container <Up> and <Running>
+and to<Stop> the conatiner.
+
+ABOUTS::
+
+1.Docker Compose runs all the Container available in the Docker Network in the form of a Single Service.
+
+2. Here all the Conatiner are Isolated but can interact with each other when needed and we can activate all the Conatiner with just a Single Command.
+
+3. Configuration file is written in YAML page which stands for "Yet Another Markup Language" where it consist of all the instruction about the services and its version in an <Serialisable Manner> and it is written in Human Readable Form.
+
+
+COMMANDS:::
+
+1. sudo docker-compose up --build = this command will use the information of<Dockerfile> to build <Image> and then the image is Run in order to create the <Conatiner> <Up>(Activate) and <Running>
+
+2.sudo docker-compose down = This will <Kill> all the running conatiner and after that it also remove the container permanently.
+
+
+
+
+
+
+
+
+ 
+

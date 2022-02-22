@@ -1,0 +1,46 @@
+SPRING MVC::::
+
+**MVC stands for Model, View, Controller and it is a <Framework> which is very much useful in order to prepare a <Web Application>. With help of Spring FW MVC is also included in the Spring and also use all the basic features of Spring like <IOC> <DI>.
+
+** Spring provide a elegant solution to use  MVC in spring FW by providing  a <Dipatcher Servelet>.
+
+** Dipatcher Servelet or the front controller is a class which recieves all the incoming request from the End User and map it to the right resource such as <Model><Controller> <View> etc..
+
+
+FEATURES::::
+
+**Spring MVC divide the code in different layer hence it is known as the <n-tier> FW it separate the <Business Logic> and the <UI> and here the <Controller> act as a mediator between the 2 layers.
+
+a> Model:- Model class or the <POJO> class consist of all the data of the appliaction. Data may be a single Object or a collection of Object.
+
+b>View:- It represent the Visual side or the UI of the application. It is displayed  in a form of <View Page> and for that we generally use <JSP>(Jakarta Server Pages) which display the desired output hich the user demand for.
+
+c> Controller:- It consist of all the Bussiness Logic and this class map the different request to different resource class either the Moedl or the view page.
+
+ARCHITECTURE::::
+
+1. FrontController/DispatcherServlet:-
+	As the name suggest this is Controller or the <Deligator> which recieve all the request from the End user and deligate all the request to the desired resource class. So this the first layer of the MVC Architecture which handle every request and  deligate accordingly.
+
+2.Handler Mapping:- 
+	It is an <Interface> whic figure out the request which the  FrontController recieve from the User  it may be a <Get> <Post> etc request so Handler Mapping will help the FC to choose the correct mapping(GET POST etc) as the <Controller> class consist of many Mapping so Handler decide the user demand and accordingly help the FC to deligate the user request to the Controller.
+
+3. Controller:-
+	Controller is a class which consist all the <Mapping>. Here it Handle all the request and interact with the <Model> class to get the data and after that it render back the data to the FrontControler as Object along with the Name of the <View Page>.
+
+4.View Resolver:- 
+	It will help the FC to decide which <View Tamplete> need to be shown to the end user and after that the FC put all the model data and the view name inside the View Templete and it is render back to the FC and it is displayed to the end user.
+
+5.View:- 
+	View is nothing but a server page for which we use the writting technique of JSP which consit of the <HTML> already and after getting the data from the <Model> Class or the <DAO> class or the <Service> it put the data in the page along with the <Name> of the Server Page so that it will view the page accordingly.
+
+ADVANTAGES::::
+
+1.Separate Roles:-
+	As MVC architecture show us that how we can distribute the work in different tiers which will separate the <Business Logic> from the <UI> and it help us to concentrate mainly to the business layer and we can use the Model Object more than one time whenever we need by using Data Access Object.
+
+2.Flexible Mapping:-
+	Here the Mapping process is very flexible as it provide annotation which easily redirect the page and it also use different technology to view the page and it dynamic data. So we can use different variety of view page like JSP, Apache Velcity etc and it will the affect the workng and flow of the code.
+
+
+	

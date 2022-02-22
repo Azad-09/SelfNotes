@@ -1,0 +1,25 @@
+AOP::::
+
+** AOP as the name suggest the <Aspects> is the key unit of the programming here. It breaks the coded into different modules hence it increases the <Modularity> of the code.
+
+**Aspects enables the use of <Cross-Cutting Concerns> such as <Transaction><Logging> etc.
+
+ TERMINOLOGY::::
+
+1.Aspects:- 
+Aspects is a <Modularization> of <Concern> that cuts across multiple classes.It may be a normal class configured through XML configuration or  Through regular <Classes> annotated with <@Aspects>.
+
+2.Join Point:- 
+This is  a point in our application where we can plug-in our AOP , It may be the <Execution> of code or <Exception> in a code but in Spring it allows  only <Method Execution> Join Point 
+
+3.Advice:- 
+Advice is an action taken by the <Aspects> at a particular <Join Point >. There are namely 5 Advices in AOP i.e <Before> <After> <Around> <After Returning> <After Throwing>
+
+a) @Before:- Run Before the advised method is Invoked.
+b) @After:- Run Before the advised method is Invoked regardless of the outcome whether it is successfull or not.
+c)@Arounf:- Run both before and after the execution of the advised method.
+d)@AfterReturning:- Runs affter the advised method successfully completes that is when it runs successfully during the run time.
+e)@AfterThrowing:- Runs after the advised method throw exception during the run time.
+
+4.Point Cuts:-
+It is not feasible to use the <Advise> at every point of the code , So the selected <Join Points> where <Advise> is used is known as Point Cuts.It helps in reducing the code by writing once and use it in multiple place.

@@ -1,0 +1,47 @@
+1.Spring:::- Spring is an Open Source Light Weight backend framework which is used to create Enterprise Application and the core features to do this is through [Dependency Injection] .
+
+2.Dependency:::- We have to maintain different layers whenever we create a backend application.The layeres are <a>Web <b>Business and <data> all this layer are dependent on each other and this is known as dependencey
+<WeB> This layer ususally take care of the UI of the application
+<Business> This layer consist of the business logic 
+<Data> This layer interact with the external interfaces and the Database.
+
+** So whenever a business layer need some <data> it dependes on the web layer which provide data to the <Business> layer from interfaces or from databases.
+
+**When the <Web> layer wants to show the data to the user it depends on the <Business> layer to retrive the data or any function. So every layer is dependent on each other.
+
+3.Dependency Injection:::- Since every layer is dependent on each other so it is very difficult to instantiate the method object of a class in another class in a large application where there may be more than 10 classes/objects because it will be cubersome in order to maintain and to track the instance and where they are used. So <tight coupling> of the code is not the solution as it is difficult to track and it also takes extra memory as we have to call everytime when needed. So in order to avoid this problem of tracking we prefer <Loose Coupling> where the object is not hard coded instead it is instantiated once and can be used whenever needed and for that we need Dependency Injection.
+
+4.Invertion Of Control(IOC):::- In Java programme  we have to create a class and then in order to use the properties of that class in another class we have to create object. But in IOC, spring framework is constructing the Object so we dont need to worry about it.
+
+**It is a component of Spring Framework:- 1<Create Object> 2<Store the Object In Memory> 3<Inject the Object to Another Object>  
+
+**Following this 3 Steps it make the application <Loosely Coupled>
+
+*** <IOC> as the name suggest here the control is inverted and the main control is ther in the hand of Spring framework. In Java when a particular class like <Bajaj Class> is dependent on the <Bike Interface> as it derives the methods and attributes of the Bike interface.  
+
+But in IOC the Spring framework take the controll and every class is dependent on the Spring framework as <Object> of every class and interface is managed by the <Spring Container> and it also decide the lifecycle of every <Object> instantiated in the container. And this process avoid the tight coupling of the code which make the code very cumbersome and also capture unnecessary spaces.
+
+5.IOC Container:::- IOC container is nothing but a space which Create the Bean Object , Stores the <Bean> Object (POJO) in a memory and also Inject the Object of a particular class to the another class using <DI>  and <ConfigXML> file which will tell which object is dependent on which class.
+
+**IOC Container:- there are 2 different IOC Conatianer  1<BeanFactory> 2<ApplicationContext> 
+	BeanFactory is a Interface and it is implemented by the Application Class so we usually use the Apllication Context and 	this container create Object after getting instruction from the XML file. 
+
+**Difference:- BeanFactory create Object when it is instructed but Application Context create Object Automatically
+   
+6.DI Wiring:::- Wiring is nothing but the process of using the attributes of a POJO class in another POJO class which is done by injecting the attributes by 2 ways that is  <Property> and <Constructor arg> and this is know as wiring which can be donr in a ConfigXML file.
+
+7.DI @Autowiring:::- In order to aviod the XMl file which is very cumbersome in large application so in order to use the Attibutes we do @Autowiring.
+
+8.AOP:::- Aspect Oriented Programming is a paradigm like OOPS which mainly focus on Aspects or in simple words on some services which can be used by any class at any time so that we dont have to write that code in the class again and again. This services are known as <Cross Cutting Concern>  as this services can be called in between any other methods. 
+Example::- when we try to place an order in any of the ecommerce site  it first ask for the login so here the login is the service which calls before the payment process and it shows without hampering our bussiness logic .
+
+9.ORM:::- Object Relational Mapping is a technique oWf mapping a data between the Object model to a relational database representation . It simplifies data creation , manupulation and access. Orm internally use <JDBC API> in order to interact with the database. 
+Advantage:- <a>It differentiate between the Business lyer with the Data Layer and Business Class can only be accesed by wirting 	            the Object.
+<b>It uses JDBC under the hood and by using ORM we dont need to configure the database like we dont need to write the <Query Language>
+
+10.Hibernate:::- It Is a FW which is used under the Spring FW and that is reason why Spring is know as FW of FW's.
+Properties::-
+<ORM> It provides the Object Relational Mapping and mainly used for the Data Persistence in the Relational Databse.
+<Basic OOPs>It supports basic OOp and can be deal with the POJO class	
+<DataBase Independent> <HQL Hibernate Query Language> <Transparent Persistence>
+

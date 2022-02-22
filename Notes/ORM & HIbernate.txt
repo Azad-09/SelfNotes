@@ -1,0 +1,62 @@
+ORM::::
+
+** Object Relational Mapping:- As the name suggest it is a technique which is used to establish a relationship between the <Java Application> and the <Relational Database>
+
+**It simplifies the data <creation> , <manupulation> and <access> and it also use <JDBC> APi inorder to maintain a connectivity with the relational database.
+
+**Domain class of an application can be accessed by instantiating the <Object> But for accessing the data of a <Table> of the Database we need to write the  <Query Language> and this difference between the the OOPS concept and R-Database is known as Impedence Mismatch.
+
+
+IMPEDENCE MISMATCH::::
+
+1.Granularity-- We can define a Class with the use of more Classes which will define that Class properly , So in this Process we breaking down the code into small granules for better usability (reusability) Like Person Class can be divided as Persona Class and an Address Class so that we can reuse it whenever needed. But R-Database only create one Table for each class.
+
+2.Inheritance/ Sub-Type-- OOPS allows the concept of <Inheritance> where a Class inherit the property of another Class but it is not allowed in R-Database.
+
+3.Identity-- For R-Database the one and only Identity is the <Primary Key> however in Java we can use but "==" operator and "equal()"method so this is an Mismatch between the 2.
+
+4.Association-- In both the process association is Different as in R-Database we can Associate to tables by using the <Join> query or by using the <Foreign Key> but it is not the same case in  Java.
+
+5.Data Navigation-- Access a data in Java need a proper navigation connection so it has to follow one by one as it can't skip any one of the Class as they are interlinked  so for that we have to write a large Query in the R-Database.
+
+ADVANTAGES::::
+
+1.Good Architecture-- It has a good architecture which separate the <Business Logic> from the <Database> and create DAO which will help to access data and helpfull for the reusability.
+
+2.Reduce Coding-- After all we mainly <Create><Read><Update> and <Delete > the data from the table so it is very tedious when we iuse JDBC as we have to write the <Query Lang> so this process is Avoided in ORM as it is done BY this technique only.
+
+
+HIBERNATE::::
+
+**Hibernate is a Framework which support the ORM technique so we can Map <Java Classes> with the <R-Database> withoit writting the Query and without thinking about the <Data Type> of the attributes. So it make the application smmoth and fast and we need to focus mainly on the <Business Logics>
+
+**HQL(Hibernate Query Language) allows us to write <Object Orientes Query Language> for advance operation
+
+** HIbernate implements the <Java Persistenct API> (JPA) which is used to perisit the data .
+
+ARCHITECTURE::::
+
+1. Front Layer::- JAVA Apllication.
+2.Persistance Object::- [(Configuration, Sessionfactory, Session, Transaction, Query, Criteria), (JDBC , JTA, JNDI)]
+3.Base Layer::- Database
+
+PERSISTENCE OBJECTS::::
+
+Hibernate use <JDBC>(Java DataBase Connectivity) JTA(Java Transaction API) and JNDI(Java Naming Directory Interface) uses all this Interface.
+
+1.Configuration:--
+Confuguration is the basic process which is done in <hibernate.config.xml> file which consist of <Meta Data> and the <SessionFactory> along with the <property> tags which help us to establish aconnectivity of the application with the database. It also take the reference of the <Mapping>.
+
+2.SessionFactory:--
+Session factory is a <Heavy Weight Object> which is <Thread Safe> and it consist of all the <Sessions> and with the help of SF we can start a  <Session> . As this Object is Thread Safe Multi thread can use the SF and only a single Object is created for a particular Application because it is a Heavy Weight Object and can slow down the processing of the Application and make the working Slow hence it is Instantiate once and wit the help of this Sessions are Started.
+
+3. Session:--
+Session are <Light Weight Object> and are <Not Thread Safe> and are instantiated for every  particular event and are used for communicating with the Database. So Session is the base Object through which we can give command to the DataBase. But it is not Thread Safe so whenever it is created after the use they are Terminated.
+
+4.Transaction:-- 
+Transaction Object is used to start the transaction of the Session as well as to establlish different functionality related to transaction of session like <Begining> of transaction, <Roll Back> of transaction <Setting Timeout> of the transaction and many more . Although it is optional and not mandatory to use.
+
+5.Query:--
+SQL or HQL is used to retrive the data from the Database and Create Object .  
+
+

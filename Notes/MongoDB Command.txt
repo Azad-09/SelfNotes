@@ -1,0 +1,37 @@
+Mongodb commands
+To run mongodb run mongo
+1.Command 1 : show existing database
+	show dbs
+2 create a new database and switched to it for example create a database productDetais
+	Use prodcutdetails
+3. at any point what is your working database
+	Db
+4. delete current database
+	Db.dropDatabase()
+5) now create collection in a database
+Db.createCollection(‘products’)
+6) how 2 display collections in a database
+Show collections / Show Tables
+7)dropiing any collection
+db.products.drop()
+8)commands to add rows(data) in collection
+db.products.insert({'pname':'colgate','ptype':'tp','price':25})
+9)commands to add multiple rows at a time
+db.products.insertMany([{'pname':'Closeup','ptype':'tp','price':25},{'pname':'pepsodent','ptype':'tp','price':35},{'pname':'SurfExcel','ptype':'dp','price':51}])
+	
+10.The command to get help about all the methods in the collection is
+db.peoducts.help()
+11.display data from collection
+db.products.find()
+with better formatted output : db.products.find().pretty()
+how 2 query of data
+for example to display pname having value colgate
+db.products.find({pname:'colgate'})
+for example to display pname having value colgate or pepsodent
+db.products.find({pname: {$in: ['colgate','pepsodent']}})
+for example to display product details whose price is greater than 30
+db.products.find({price:{$gt : 30}})
+for example to display product details whose price is less than 30
+ db.products.find({price:{$lt : 30}})
+deleting data
+db.products.deleteOne( { pname: "colgate" } )

@@ -1,0 +1,14 @@
+CIRCUIT BREAKER::::
+
+** If there is a request from the Client-Side for a particular service and that service is down at that particular period as it is under maintenance, the client has to wait for the processing of the request until the service is <Up> again.
+
+** But waiting that long along with others pending request make the server overloaded and leads to failure.
+
+** In order to avoid this kind of circumstances we use a <Circuit Breaker> that set a <Timeout Period> for a particular request and if within that time period the service will not respond then it will <Cancel> the request and return an error HTTP status to the end-user.
+
+NOTES::
+
+** Working on Spring Framework, we can use <Hystrix> which is a Circuit Breaker Design Pattern which we can get by using <Spring Cloud> which is an Open-Source Library that consists of tools and Design Patterns useful for creating CLoud Application which will run on Varied Environment.
+
+ 
+
