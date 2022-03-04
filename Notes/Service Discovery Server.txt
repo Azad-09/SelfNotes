@@ -1,16 +1,16 @@
 SERVICE DISCOVERY SERVER USING EUREKA SERVER::::
 
-** API Gateway is only useful for routing the request from the end user and knowing the health of the services is not the work of Gateway, hence this will create a Mazor Problem as the user get nothing in return for which it demands.
+** API Gateway is only useful for routing the request from the end-user and knowing the health of the services is not the work of Gateway, hence this will create a Mazor Problem as the user get nothing in return for which it demands.
 
-** In order to avoid this problem we use Service Discovery Server (Eureka Server) in order to check the health of the serviices whether they are <UP> (active) or <DOWN> not active .
+** In order to avoid this problem we use Service Discovery Server (Eureka Server) in order to check the health of the services whether they are <UP> (active) or <DOWN> not active.
 
 WORKING::
 
-1. Service Discovery Server continiously sends <HeartBeat> to the services in order to know their status either they are Up or Down.
+1. Service Discovery Server continuously sends <HeartBeat> to the services in order to know their status whether they are Up or Down.
 
-2. There is a <Timeout Period> for every services to assume the service is offline. Once the Timeout threshold is reached , the server assume that the service is down at this period and it will not redirect the request from the client until the service is Up.
+2. There is a <Timeout Period> for every service to assume the service is offline. Once the Timeout threshold is reached, the server assumes that the service is down at this period and it will not redirect the request from the client until the service is Up.
 
-3. This Discovery Server is <Non-Invasive> that is it cann't alter the code in any of the services.
+3. This Discovery Server is <Non-Invasive> that is it can't alter the code in any of the services.
 
 4. The Default port number of the Eureka Server is 8761.
 

@@ -1,22 +1,22 @@
-r
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Answers:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::HIBERNATE::
 
-1. What is hibernate?
-Ans: Hibernate is a <Sub-FrameWork> of the Spring Framework which support <ORM> technology and help us to establish a connection between the <Java Application> and the <Relational Database> so that we can put the OOP Model attributes to the database in the form of Table and it values. It uses <JDBC> under the hood and it reduces the codes related to establishing the connection so that the coder only concentrate on writing the logic. It also provide <HQL> which automatically create table in the database just by refering the <Mapping> of the Model Class. 
+1. What is Hibernate?
+Ans: Hibernate is an <Sub-FrameWork> of the Spring Framework which support <ORM> technology and helps us to establish a connection between the <Java Application> and the <Relational Database> so that we can put the OOP Model attributes to the database in the form of Table and its values. It uses <JDBC> under the hood and it reduces the codes related to establishing the connection so that the coder only concentrates on writing the logic. It also provides <HQL> which automatically creates a table in the database just by referring to the <Mapping> of the Model Class. 
 
 2. What is ORM?
 Ans: Object-Relational Mapping is used to convert the OOPs Model Object into a <Query> language so that it will convert the attributes so that it can store the data in a Table Format in a Database. Because the code is written in OOPs format and Database is supporting the Query language and this is known as the Impedance Mismatch, which can be avoided using the ORM technique.
  
 3. What is ORM in Hibernate?
-Ans: Hibernate is a Sub-Framework of Spring which uses the ORM technique in order to establish a connection between the Application and the Database. Hibernate add some extra features in the ORM technique which avoid the Impedance Mismatch between the 2 platform and it also shorten our code and it also help by Automatically Creating the Table in Database using HQL language. So the only work of a coder is to write the Business Logic and everything else should be taken care by the Hibernate FW.
+Ans: Hibernate is a Sub-Framework of Spring that uses the ORM technique to establish a connection between the Application and the Database. Hibernate add some extra features in the ORM technique which avoids the Impedance Mismatch between the 2 platforms and it also shortens our code and it also helps by Automatically Creating the Table in the Database using the HQL language. So the only work of a coder is to write the Business Logic and everything else should be taken care of by the Hibernate FW.
 
 4. What are the advantages of using Hibernate over JDBC?
-Ans: JDBC is Java Database Connectivity is an API and with the use of different classes and Interfaces of JDBC and using the JDBC <Driver> we can establish a connection with the <Relational Database> but just by using JDBC we can only able to connect the Database we still have to write the Query language in order to create a table in the database and to store the data. So it is going to be a Cumbersome process as Both the platform (JAVA and DATABASE) follow different language in order to store their data so for that Hibernate is Introduced so that we as a coder don't have to think about the connectivity as well as the Query language to create the tabby this process it Minimises the work of a coder as it provides certain technology which automatically do all the process and hence reduce the code as well as fasten the application and make the application light as we are using Spring Hibernate so it also uses the core properties of Spring that is <IOC> and <DI> which convert the Tightly coupled attributes to loosely coupled.
+Ans: JDBC is Java Database Connectivity is an API and with the use of different classes and Interfaces of JDBC and using the JDBC <Driver> we can establish a connection with the <Relational Database> but just by using JDBC we can only able to connect the Database we still have to write the Query language to create a table in the database and to store the data. So it is going to be a Cumbersome process as Both the platform (JAVA and DATABASE) follow different languages to store their data so that Hibernate is Introduced so that we as a coder don't have to think about the connectivity as well as the Query language to create the tabby this process it Minimises the work of a coder as it provides certain technology which automatically does all the process and hence reduce the code as well as fastens the application and make the application light as we are using Spring Hibernate so it also uses the core properties of Spring that is <IOC> and <DI> which convert the Tightly coupled attributes to loosely coupled.
 
 5. Explain Hibernate Framework?
-Ans: Hibernate FW is the middle layer between the Java Application and Relational DataBase and its main motive is to store the Object data in the Table Format in a database and for that it need some Interfaces like
+Ans: Hibernate FW is the middle layer between the Java Application and Relational DataBase and its main motive is to store the Object data in the Table Format in a database and for that, it needs some Interfaces like
 	a> Configuration Interface 
 	b> SessionFactory Interface
 	c> Session Interface
@@ -25,16 +25,16 @@ Ans: Hibernate FW is the middle layer between the Java Application and Relationa
 6. What are the core interfaces of Hibernate?
 Ans: Core Interface
 a> Configuration:- 
-It is a process in which we write the code for establishing a connection with the Database where we mention different properties like <Driver><Dialect> etc hence it is known as the configuring stage of the application which provide all the information related to the connectivity.
+It is a process in which we write the code for establishing a connection with the Database where we mention different properties like <Driver><Dialect> etc hence it is known as the configuring stage of the application which provides all the information related to the connectivity.
 
 b> SessionFactory:-
-This is another Persisted Object which is a very Heavy weight object but it is Thread Safe hence Multiple threads can use this Object and we can store various Session inside this Session factory and we can call any Session by using the Object of SessionFactory, we can Instantiate the Object of SessionFactory whenever needed but it will hamper the processing of the Application and make the Application slow hence only Object of SessionFactory is created and is used multiple times in order to call the start a event or Session.
+This is another Persisted Object which is a very <Heavyweight> object but it is <Thread Safe> hence <Multiple threads> can use this Object and we can store various Session inside this Session factory and we can call any Session by using the Object of SessionFactory, we can Instantiate the Object of SessionFactory whenever needed but it will hamper the processing of the Application and make the Application slow hence only Object of SessionFactory is created and is used multiple times to call the start an event or Session.
 
 c> Session:- 
-Session is nothing but an event which is started/ called by the user. Session are used to connect and transfer the desired data that the user demanded for so whenever a request / event is created by the and user the Session use the Object of SessionFactory and start the Session and connect to the Database and do the update according to the demand.
+A session is nothing but an event that is started/ called by the user. Session is used to connect and transfer the desired data that the user demanded so whenever a request/event is created by the use the Session uses the Object of SessionFactory and start the Session and connect to the Database and do the update according to the demand.
 
 d> Query:-
-Query is a Persistence Object which help us to Automatically create the Table in the database using <HQL>.
+A query is a Persistence Object which help us to Automatically create the Table in the database using <HQL>.
 
 7. List some of the databases supported by Hibernate.
 Ans:
@@ -53,40 +53,40 @@ Ans: Hibernate Query Language is a language offered by the Hibernate FW which is
 9. How to achieve mapping in Hibernate?
 Ans: Mapping can be done by 2 process 
 a> XML file:- 
-We can use the XML file and can write the configuration as well as the SessionFactory along with the Mapping defence inside the XML file using different tags and mention all the property inside the <propert> tag.
+We can use the XML file and can write the configuration as well as the SessionFactory along with the Mapping define inside the XML file using different tags and mention all the properties inside the <property> tag.
 
 b> POJO Class:-
-We can do the mapping process using annotation in the POJO classes like we can add different annotation like @Entity in order to specify a class as the Mapping class or the Persistence Class after that we also use the @Table in order to provide a name to the table according to our will and also we use the @Column tag ignorer to change the name of each column if we want to.
+We can do the mapping process using annotation in the POJO classes like we can add different annotations like @Entity to specify a class as the Mapping class or the Persistence Class after that we also use the @Table to provide a name to the table according to our will and also we use the @Column tag to change the name of each column if we want to.
 
 10. Name some of the important interfaces of Hibernate framework?
 Ans:
 a> Configuration:- 
-It is a process in which we write the code for establishing a connection with the Database where we mention different properties like <Driver><Dialect> etc hence it is known as the configuring stage of the application which provide all the information related to the connectivity.
+It is a process in which we write the code for establishing a connection with the Database where we mention different properties like <Driver><Dialect> etc hence it is known as the configuring stage of the application which provides all the information related to the connectivity.
 
 b> SessionFactory:-
-This is another Persisted Object which is a very Heavy weight object but it is Thread Safe hence Multiple threads can use this Object and we can store various Session inside this Session factory and we can call any Session by using the Object of SessionFactory, we can Instantiate the Object of SessionFactory whenever needed but it will hamper the processing of the Application and make the Application slow hence only Object of SessionFactory is created and is used multiple times in order to call the start a event or Session.
+This is another Persisted Object which is a very Heavyweight object but it is Thread Safe hence Multiple threads can use this Object and we can store various Session inside this Session factory and we can call any Session by using the Object of SessionFactory, we can Instantiate the Object of SessionFactory whenever needed but it will hamper the processing of the Application and make the Application slow hence only Object of SessionFactory is created and is used multiple times to call the start an event or Session.
 
 c> Session:- 
-Session is nothing but an event which is started/ called by the user. Session are used to connect and transfer the desired data that the user demanded for so whenever a request / event is created by the and user the Session use the Object of SessionFactory and start the Session and connect to the Database and do the update according to the demand.
+The session is nothing but an event that is started/ called by the user. Session is used to connect and transfer the desired data that the user demanded so whenever a request/event is created by the use the Session uses the Object of SessionFactory and start the Session and connect to the Database and do the update according to the demand.
 
 d> Query:-
-Query is a Persistence Object which help us to Automatically create the Table in the database using <HQL>.
+A query is a Persistence Object which helps us to Automatically create the Table in the database using <HQL>.
 
 11. What do you mean by Hibernate Configuration File?
-Ans: It is a process in which we write the code for establishing a connection with the Database where we mention different properties like <Driver><Dialect> etc hence it is known as the configuring stage of the application which provide all the information related to the connectivity.
+Ans: It is a process in which we write the code for establishing a connection with the Database where we mention different properties like <Driver><Dialect> etc hence it is known as the configuring stage of the application which provides all the information related to the connectivity.
 
 12. What is hibernate mapping file?
 Ans: a> XML file:- 
-We can use the XML file and can write the configuration as well as the SessionFactory along with the Mapping defence inside the XML file using different tags and mention all the property inside the <propert> tag.
+We can use the XML file and can write the configuration as well as the SessionFactory along with the Mapping definer inside the XML file using different tags and mention all the properties inside the <property> tag.
 
 b> POJO Class:-
-We can do the mapping process using annotation in the POJO classes like we can add different annotation like @Entity in order to specify a class as the Mapping class or the Persistence Class after that we also use the @Table in order to provide a name to the table according to our will and also we use the @Column tag ignorer to change the name of each column if we want to.
+We can do the mapping process using annotation in the POJO classes like we can add different annotations like @Entity to specify a class as the Mapping class or the Persistence Class after that we also use the @Table to provide a name to the table according to our will and also we use the @Column tag ignorer to change the name of each column if we want to.
 
 13. Name some important annotations used for Hibernate mapping?
-Ans: @Entity , @Table, @AutoGenerate @Column
+Ans: @Entity, @Table, @AutoGenerate @Column
 
 14. Collections in Hibernate(What are the collection types in Hibernate)--New topic
-15. What is dialect in Hibernate	
+15. What is the dialect in Hibernate	
 
 
 
@@ -95,67 +95,67 @@ Ans: @Entity , @Table, @AutoGenerate @Column
 
 ::Spring::
 
-1.What is Framework?
-Ans:: FrameWork is an environment which is used for writting the code and it make the process of wrtting and implementing the code easy.So for a new Beginner coder it will be help ful to code in ease.
-Framework consist of a <Coding Platform> , a <Compiler> to compile the code and <Tools> used in the Application and <API's> the in-build Interfaces which simplify and reduce the code
+1. What is Framework?
+Ans:: FrameWork is an environment that is used for writing the code and it makes the process of writing and implementing the code easy. So for a new Beginner coder, it will be helpful to code with ease.
+The framework consists of a <Coding Platform>, a <Compiler> to compile the code and <Tools> used in the Application and <API's> the in-build Interfaces which simplify and reduce the code
 
-2.What is Spring Framework?
-Ans:: Spring Framework is a Backend FW which is used by Java Application in order to reduce the complexity in making large <Enterprises Application>. It makes the application work smooth, faster and miost importantly make the Application Lighter . It is Developed by Rod Jhonson .
+2. What is Spring Framework?
+Ans:: Spring Framework is a Backend FW that is used by Java Application to reduce the complexity in making large <Enterprises Application>. It makes the application work smooth, faster, and most importantly makes the Application Lighter. It is Developed by Rod Jhonson.
 
-3.What are the features of Spring Framework?
-Ans:: Features of Spring FW are many but the Core Features are <POJO> class <DI> and <AOP> . Apart from that there are many features which make Spring FW one of the best FW of Backend.
+3. What are the features of Spring Framework?
+Ans:: Features of Spring FW are many but the Core Features are <POJO> class <DI> and <AOP>. Apart from that, many features make Spring FW one of the best FW of Backend.
 <Open Source> Community Version of the Spring FW is easily available on the Web so it is easily accessible and anyone can use this FW
 <LightWeight> With the help of Spring FW we can create a lightweight enterprise application as it relies on POJO classes and we don't need to inherit a method from other Classes and Interfaces and we use <DI> which prevent unnecessary memory allocation and that makes the application light. 
 <FW of FW's> This is an FW that allows other FW to work under him without disturbing the flow and core implementation of the Spring FW. Examples are 	        Hibernate, MVC.
 
 4. What is a Spring configuration file?
-Ans:: This is an XML file which is a part of IOC Container it consist of <Meta-Data> along with the <BeanFactory> and <Beans> (nothing but the POJO class)
-           and is known as the Configuration File because throgh this file the Objects were Created , Stored in a particular Memory Location and It also consist                  of the <DI> and here the <Wiring> of this Attributes is done by using either the <Property> tags or <Constructor args> and it also control the                                 <LifeCycle> of the Beans as it can decide the Initialisation of the bean and also the destruction of the beans and it also decide the Scope of the Beans.
+Ans:: This is an XML file that is a part of IOC Container it consists of <Meta-Data> along with the <BeanFactory> and <Beans> (nothing but the POJO class)
+           and is known as the Configuration File because through this file the Objects were Created, Stored in a particular Memory Location and It also consists of the <DI> and here the <Wiring> of this Attributes is done by using either the <Property> tags or <Constructor args> and it also controls the                                 <LifeCycle> of the Beans as it can decide the Initialisation of the bean and also the destruction of the beans and it also decides the Scope of the Beans.
 
 5. What do you mean by IoC (Inversion of Control) Container?
-Ans:: IOC is a core feature of Spring FW and as the name suggest here the control is completely depends upon the FW as with the Introducton of <DI> in                       Spring It helps to the application to loosely couple the attributes which will save memory and avoid the reuse of the Objects of a particular class so           instead of that a particular XML file is created where all the Objects are instantiated inside the IOC container and whenever needed they were used          through wiring so here the control is completely in the hand of Spring FW and that i sthe reason why we call this as IOC.
+Ans:: IOC is a core feature of Spring FW and as the name suggest here the control completely depends upon the FW as with the Introduction of <DI> in                       Spring It helps the application to loosely couple the attributes which will save memory and avoid the reuse of the Objects of a particular class so instead of that a particular XML file is created where all the Objects are instantiated inside the IOC container and whenever needed they were used through wiring so here the control is completely in the hand of Spring FW and that is the reason why we call this as IOC.
 
 6. What do you understand by Dependency Injection?	 
-Ans:: Meaning of DI is clearly understandable by it's name as  different Class / Object are dependent to each other like If there is a <Customer Class> then it            should depends upon the <Address Class> as every person have address so here Customer is dependent on Address so in order to use the attributes of            the address class we need to inject the Attributes through <Properties>  tag or <Constructor arg> tag which is known as <Wiring> or we can use           @AutoWire annotation if we are not using the Config.XML file.
+Ans:: Meaning of DI is understandable by its name as different Class / Object are dependent on each other like If there is a <Customer Class> then it should depend upon the <Address Class> as every person has addressed so here Customer is dependent on Address so to use the attributes of the address class we need to inject the Attributes through <Properties>  tag or <Constructor arg> tag which is known as <Wiring> or we can use           @AutoWire annotation if we are not using the Config.XML file.
 
 7. Explain the difference between constructor and setter injection?
-Ans:: DI AutoWiring can be done different way either we can Autowire the Attributes through Constructor or through Setter Method . As both are the            methods so in order to utilise Autowire we use the @Autowire annotation above the method  so this is the only difference in the placement of this           Annotation.
+Ans:: DI AutoWiring can be done differently either we can Autowire the Attributes through Constructor or Setter Method. As both are the methods so to utilize Autowire we use the @Autowire annotation above the method so this is the only difference in the placement of this Annotation.
 
 8. What are Spring Beans?
-Ans:: Spring Beans are nothing but the POJO Classes which are inserted inside the Beans Tag or <BeanFactory> and inside BeanFactory this Objects are            instantiated.
+Ans:: Spring Beans are nothing but the POJO Classes which are inserted inside the Beans Tag or <BeanFactory> and inside BeanFactory these Objects are instantiated.
 
-9. How is the configuration meta data provided to the spring container?
-Ans:: Spring Container are done in a XML file where at first inside the <beans> tag all the <dependencies> and <services> are mentioned in XML format and            after that <bean> tag are used in order to instantiate the bean or the POJO class.
+9. How is the configuration metadata provided to the spring container?
+Ans:: Spring Container are done in an XML file where at first inside the <beans> tag all the <dependencies> and <services> are mentioned in XML format and after that <bean> tag are used to instantiate the bean or the POJO class.
 
-10.What are the bean scopes available in Spring?
-Ans:: There are different Bean Scope like <Singleton> where we assign the bean to be instantiate once only. <Prototype> can be instantiate more than once
+10. What are the bean scopes available in Spring?
+Ans:: There are different Bean Scope like <Singleton> where we assign the bean to be instantiated once only. <Prototype> can be instantiated more than once
            <Request> is used when the bean use HTTP request <Session> valid for HTTP session, and lastly <Global-Session> for global HTTP Session.
 
 11.  Differentiate between BeanFactory and ApplicationContext.
-Ans:: BeanFactory is an Interface which provide a Bean Container and it instantiate the object when requested. And ApplicationContext is an Interface which            extends all the features of BeanFactory and have some extra miscellaneous tools which helpful as it reduce the code and here the object is instantiated            automatically.
+Ans:: BeanFactory is an Interface that provides a Bean Container and it instantiates the object when requested. An ApplicationContext is an Interface that extends all the features of BeanFactory and has some extra miscellaneous tools which are helpful as it reduces the code and here the object is instantiated automatically.
 
-12.What do you understand by @Autowired annotation?
-Ans: Auto-wired Annotation is a process where the <DI> is done implicity without using any tags in the XML file so we don't need to use the <property> tag or          the <constructor arg> tags to wire the attributes.
+12. What do you understand by @Autowired annotation?
+Ans: Auto-wired Annotation is a process where the <DI> is done simply without using any tags in the XML file so we don't need to use the <property> tag or the <constructor arg> tags to wire the attributes.
 
-13.What are the ways by which Hibernate can be accessed using Spring?
+13. What are the ways by which Hibernate can be accessed using Spring?
 
 
 
-14.What is AOP?
-Ans: Aspect Oriented Programming is a paradigm like OOPS which mainly focus on Aspects or in simple words on some services which can be used by any            class at any time so that we dont have to write that code in the class again and again. This services are known as <Cross Cutting Concern> as this            services can be called in between any other methods. 
+14. What is AOP?
+Ans: Aspect-Oriented Programming is a paradigm like OOPS which mainly focuses on Aspects or in simple words on some services which can be used by any class at any time so that we don't have to write that code in the class again and again. These services are known as <Cross Cutting Concern> as these services can be called in between any other methods. 
 
-Example::- When we try to place an order in any of the ecommerce site  it first ask for the login so here the login is the service which calls before the payment process and it shows without hampering our bussiness logic .
+Example::- When we try to place an order in any of the eCommerce sites it first asks for the login so here the login is the service that calls before the payment process and it shows without hampering our business logic.
 
-15.Tight Coupling VS Loose Coupling
-Ans: Tight Coupling is something when a particular Class is highly dependent on other Class like when any one of the class is taking high responsiblity like           change in any one of class(Parent)  will leads to change in the (child) other class is known as Tight Coupling.
+15. Tight Coupling VS Loose Coupling
+Ans: Tight Coupling is something when a particular Class is highly dependent on other Classes like when any one of the class is taking high responsibility like change in any one of class(Parent) will lead to change in the (child) another class is known as Tight Coupling.
 
 Example:: Like Engine is the Parent class and Bike is the Child class so any change in the Parent Class leads to the change in the child class.
 
-           Loose Coupling is a form of coupling where coupling is done between two classes but they are not directly connected like in POJO class we use private            variables and to access this variable we need a <Getter> method and to set the value we need <Setter> value so here the private varible is not directly            used or dependent with the other class and this is knwon as Loose Coupling.
+           Loose Coupling is a form of coupling where the coupling is done between two classes but they are not directly connected like in the POJO class we use private variables and to access this variable we need a <Getter> method and to set the value we need <Setter> value so here the private variable is not directly used or dependent with the other class and this is known as Loose Coupling.
 
 
 
-::SPRING BOOT::
+:: SPRING BOOT::
 
 
 16. What do you understand by the term ‘Spring Boot’?
@@ -165,61 +165,61 @@ Ans: Spring Boot is an <Open Source> in build <Standalone> framework of Spring a
 Ans:
  
 a> MVC Design Pattern:
-Model View Controller is used by Spring FW in order to create a web based application which separate the <Business Logic> and the <Persisted Data> so that we can focus more on the business logic and can use the data  using <DAO> or <Services> and it also use the core properties of Spring that is <IOC> and <DI>.
+Model View Controller is used by Spring FW in order to create a web-based application that separates the <Business Logic> and the <Persisted Data> so that we can focus more on the business logic and can use the data using <DAO> or <Services> and it also uses the core properties of Spring that is <IOC> and <DI>.
 
 b> Factory Patterns:
 Factory Patterns is used to load <Beans> (Model Class) by using <BeanFactory> and <ApplicationContext>.
 
 c> Singelton Patter:
-Used by Spring and it says that one and only one instance of a particular class will be created per <ClassHolder> whereas the default Scope of the beans are Singleton only.
+Used by Spring and it says that one and only one instance of a particular class will be created per <ClassHolder> whereas the default Scope of the beans is Singleton only.
 
 d> Front Controller Pattern:
-Front Controller or also known as the <Dispatcher Servlet> is used by the Spring FW as it handles all the incoming request from the end user. All the request is first delighted to the Front Controller as there are many entry point available in the Application so it is decided by the FC where to delegate the further information according to the request of the User.
+Front Controller or also known as the <Dispatcher Servlet> is used by the Spring FW as it handles all the incoming requests from the end-user. All the request is first delighted to the Front Controller as there are many entry points available in the Application so it is decided by the FC were to delegate the further information according to the request of the User.
 
 
 18.  Explain the advantages of using Spring Boot for application development.
 Ans: 
-a> This FW is widely used to develop <REST API> as it shorten the code and provide the easiest way to develop <Web Application>
-b> The primary features of the Spring Boot is <AutoConfiguration>. It automatically configure the class based on the requirement. And it also create <Standalone> application with less configuration and reduce boilerplate code. [Difference]
+a> This FW is widely used to develop <REST API> as it shortens the code and provides the easiest way to develop <Web Application>
+b> The primary feature of the Spring Boot is <AutoConfiguration>. It automatically configures the class based on the requirement. And it also creates <Standalone> application with less configuration and reduces boilerplate code. [Difference]
 c> SB offers inbuilt <Embedded Server> which such as <Jetty> and <TomCat> helps to connect to the server. [Difference]
 d> Spring Boot provide us with various <Plugins> for working with an embedded and <In-Memory Database> <H2>   [Difference]
 
 19. Differentiate between Spring and Spring Boot.
 Ans:
-a> This FW is widely used to develop <REST API> as it shorten the code and provide the easiest way to develop <Web Application> [Difference]
-b> The primary features of the Spring Boot is <AutoConfiguration>. It automatically configure the class based on the requirement. And it also create <Standalone> application with less configuration and reduce boilerplate code. [Difference]
+a> This FW is widely used to develop <REST API> as it shortens the code and provides the easiest way to develop <Web Application> [Difference]
+b> The primary feature of the Spring Boot is <AutoConfiguration>. It automatically configures the class based on the requirement. And it also creates <Standalone> application with less configuration and reduces boilerplate code. [Difference]
 c> SB offers inbuilt <Embedded Server> which such as <Jetty> and <TomCat> helps to connect to the server. [Difference]
 d> Spring Boot provide us with various <Plugins> for working with an embedded and <In-Memory Database> <H2>   [Difference]
 
 20. What does @SpringBootApplication annotation do internally?
-Ans: By using this annotation we enable 3 more annotation that are 
+Ans: By using this annotation we enable 3 more annotations that are 
 a> @EnableAutoConfiguration:
-It auto configure the Spring Boot application mechanism.
+It auto-configures the Spring Boot application mechanism.
 b> @ComponentScan: 
 It scan on the packages where the application is located.
 c> @Configuration:
-It allow to register more <Beans> in the context or import addition configuration classes.
+It allows registering more <Beans> in the context or import addition configuration classes.
 
 
-::::Spring Web MVC::::
+:::: Spring Web MVC::::
 
 
-21.What is the Spring MVC framework?
-Ans: Spring MVC is a <Sub-FrameWork> of Spring FW and as the name suggest MVC stand for Model View and Controller . It is a <N-tier> FW where all the layers are separated from each other and that help the coder to separate the <Business Logic> with the <Model Class> so that we can focus mainly on Business Logic and can also reuse the data which is available on the <Model Class> as well as the <Services> and as it uses Spring core properties it uses <IOC> and <DI> and make the application loosely coupled which make the application flexible and Web ready.
+21. What is the Spring MVC framework?
+Ans: Spring MVC is an <Sub-FrameWork> of Spring FW and as the name suggests MVC stands for Model View and Controller. It is an <N-tier> FW where all the layers are separated from each other and that helps the coder to separate the <Business Logic> with the <Model Class> so that we can focus mainly on Business Logic and can also reuse the data which is available on the <View Class> as well as the <Services> and as it uses Spring core properties it uses <IOC> and <DI> and makes the application loosely coupled which make the application flexible and Web-ready.
 
-22. What are the benefits of Spring MVC framework over other MVC frameworks?
-Ans: MVC FW is a design pattern which mainly focus on Model Class, Controller and the View Page and here the Controller act as a <Mediator> between the Model Class and View Page where the Model class provide the persisted data from the Model Class and render it to the display using the View Page. But the only difference between MVC and Spring MVC is that in MVC we can't use the core properties of Spring that is <DI> and <IOC> and there are many other classes like <Handler Mapping> and <View Resolver> which is used in Spring MVC.
+22. What are the benefits of the Spring MVC framework over other MVC frameworks?
+Ans: MVC FW is a design pattern that mainly focuses on Model Class, Controller, and the View Page, and here the Controller act as a <Mediator> between the Model Class and View Page where the Model class provide the persisted data from the Model Class and render it to the display using the View Page. But the only difference between MVC and Spring MVC is that in MVC we can't use the core properties of Spring that are <DI> and <IOC> and there are many other classes like <Handler Mapping> and <View Resolver> which is used in Spring MVC.
     
 23. What is DispatcherServlet in Spring MVC?
-Ans: DispatcherServlet is also known as the <Front Controller> which is the first layer of the MVC pattern which accept all the request from the user. All the request are deligated to the Front Controller first as there are various entry points available in an application so in order to avoid the confusion this layer is used and it further delegate the request to other layers according to the need and demand.
+Ans: DispatcherServlet is also known as the <Front Controller> which is the first layer of the MVC pattern which accept all the request from the user. All the requests are delegated to the Front Controller first as there are various entry points available in an application in order to avoid confusion this layer is used and it further delegates the request to other layers according to the need and demand.
 
 24. Explain Spring MVC architecture?
 Ans: MVC Architecture:
 a> Front Controller/DispatcherServlet::
-- As the name suggest it is the first layer or the front layer which accept all the request coming from the end user and this is the <Master Layer> as it interact with every layer.So it act as an entry point in MVC.
+- As the name suggests it is the first layer or the front layer which accept all the request coming from the end-user and this is the <Master Layer> as it interacts with every layer. So it acts as an entry point in MVC.
 
 b> Handler Mapping:
-- After the Front Controller get request from the end user it consult the <Handler Mapping> before entering into the Controller class as Controller Class consist of all the Mappings along with their <Business Logic> so Handler Mapping Class decide the Mapping according to the request of the user and Handle the process of Mapping for the Front Controller.
+- After the Front-Controller gets a request from the end-user it consults the <Handler Mapping> before entering into the Controller class as Controller Class consist of all the Mappings along with their <Business Logic> so Handler Mapping Class decide the Mapping according to the request of the user and Handle the process of Mapping for the Front Controller.
 
 c> Controller:
 - Controller Class consist of all the mapping along with the Business Logic and it act as the middle layer or the Mediator between the Model Class and View Page. It Collect <Data> from the Model Class and also the <Name> of the <View Page> and pass it back to the Front Controller.

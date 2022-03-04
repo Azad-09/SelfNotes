@@ -9,7 +9,7 @@ MICROSERVICE DESIGN PATTERN::::
 
 SPRING CLOUD::::
 
-** Spring Cloud is an open-source <Library> which provides some tools and Design Patterns that simplify the creation of the  <Cloud Application> or the application which runs on <Distributed Environment>. All the above Design Pattern is provided by the Spring Cloud. It is easyly available in the web.
+** Spring Cloud is an open-source <Library> which provides some tools and Design Patterns that simplify the creation of the  <Cloud Application> or the application which runs on <Distributed Environment>. All the above Design Pattern is provided by the Spring Cloud. It is easily available on the web.
 
 API Gateway::::
 

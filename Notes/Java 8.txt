@@ -1,0 +1,38 @@
+1. Why was Java 8 Introduced?
+Ans: It is introduced to make the code <Concise> and to implement the <Functional Programming> in Java which was earlier not there.
+
+2. Lambda Expression?
+Ans: Lambda Expression is an <Anonymous Function> (without name, return type, and access modifier) and has one lambda (->) symbol. It is used to write <Functional Programming> and it reduces the <LOC>.
+
+3. Functional Interfaces?
+Ans: Functional Interfaces are those interfaces that consist of only one Abstract method and may consist of many <Static Method> or <default method> and it provides a reference to the lambda expression.
+
+4. Predicate?
+Ans: Predicate is the pre-defined <Functional Interface> which consist of only one Abstract method and Predicate consist of [test()] abstract method whose return type is <Boolean>. So it is used to write the code in a single line where we have to decide whether the condition is true or false. Input type can be anything it may be a <String>, <Integer>, etc which is in the form of Generic and only have one return type that is Boolean.
+
+Ex- Predicate <String> checkLength = s-> s.length >= 5
+it may give true/false as result.
+here the input type is String and the return type is always the Boolean so no need to mention it.
+
+[Predicate Join] :- <And> <Not> and <Negate>
+
+5. Function?
+Ans: Function is also pre-defined <Function Interface> which is having a single <Abstract Method> that is [apply()] whose return type may be anything not only Boolean which is there in the case of Predicate.
+
+Ex - Predicate <Integer, Integer> squareMe = i -> i * i 
+Here the Input type is Integer and Return type is also Integer
+
+[Function Chaining]:- It can be done in 2 ways <andThen> and <compose>, <andThen> will execute the 1st function and then the 2nd fuction but compose will do the opposite.
+
+6. Consumer?
+Ans: Consumer is also a <Functional Interface> and as the name suggest it is going to consume and it will not return back any thing , so it has no return type and it does'nt return anuthing only consume whatever input is passed so only the Input type is passed to it. And it consist of only one  abstract method that is [accept()].
+
+[Consumer Chaining]:- <andThen>
+
+Ex:- Like saving any data in the database will only save it and will not return it anything.
+
+7. Supplier?
+Ans: Supplier is also a <Functional Interface> which only supply the output and thats why it is known as supplier and the only Abstract method available here is [get()] . It consist of only Return Type.
+
+Ex- Supply of Current Date.
+ 
