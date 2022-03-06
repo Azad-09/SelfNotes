@@ -1,0 +1,64 @@
+1. Array:--
+Ans: An Array is a collection of <Homogenous> elements, of a single data type that is stored in <Adjacent> memory locations. We can access the elements of an array by specifying the name and the index number of the elements which start from 0.
+
+2. Class:--
+Ans: A class is a structure in which an Object is Built. It contains a blueprint of building an Object and information about that Object.
+
+The class file is written by a programmer to allow the computer to use or construct new Objects.
+
+3. Constructor:--
+Ans: Constructor is a special kind of method which is having a name similar to the class name and it doesn't have <Return Type> and it is invoked to create an Object from the class blueprint.
+
+TYPE:- Default Constructor(No parameter, No Logic), No-Argument, Parameterized Constructor.
+
+4. Encapsulation
+Ans: Encapsulation is a feature of OOPS where all the data that is the <Data Member> and <Member Function> are bound and protected and the best example of Encapsulation is the use of Class in order to bind all the properties of an Object.
+
+It is done in order to combine all the attributes and functions of a particular Object within in class so that it can't be misused by any other class.
+
+5. "IS A" relationship and "HAS A" relationship
+Ans: Parrot "Has A" Beak which means here the relationship between Parrot and Beak is either <Composition / Aggregation>.
+
+Parrot "Is A" Bird means here the relationship is known as "<Inheritance>"
+
+6. Inheritance:-
+Ans:- It is also a feature of OOPS in which all the functionalities and capabilities of an existing class are extended or reused by a new class.
+
+After extending the existing class which is known as <Super Class> the <Sub Class> can put some add-on features.
+
+TYPES:- <Single-Level> <Multi-Level> <Hierarchical> and <Hybrid>
+
+7. Polymorphism:--
+Ans: It is a combination of 2 words "Poly" means "Many" and "Morphs" means "Forms". This is also a feature of OOPS where a single Entity can exist in many forms. The ability of an Object to make more than one form.
+
+There are 2 types of Polymorphism
+** Static Polymorphism == Method Overloading 
+** Dynamic Polymorphism == Method Over-riding
+
+8. Abstraction:--
+Ans:
+It is another feature of OOPS where the Unrelevant Information is hidden and shows only the necessary data. Abstraction mainly focuses on what an Object does instead of how it is doing it.
+Here the functionality is provided to the user but the implementation of the functionality remains hidden from the user.
+
+Features:- We use the Abstract keyword while creating an Abstract Class and the methods of the abstract class is have a body that means there is no implementation and the "abstract" keyword is also used by the methods.
+
+Use:- Abstract class is used when there is more than 1 subclass that is using the same method but implementing the logic differently.
+
+9. Interfaces
+Ans: Interfae is a 100 % abstract type where the <Data Memebers> are <public> <Static> and <Final> and the methods are by default <public> and <abstract> we don't need to mention it.
+
+It is used to achieve Abstraction, Polymorphism and Multiple Inheritance.
+
+10. Super:--
+Ans:
+Super keyword is used to refer the Object of the SuperClass and it is used to call the Superclass method and access the superclass constructor. It is used to eliminate the confusion between the parent and child class method.
+
+11. Final:--
+Ans:
+Final keyword is a non-access modifier used by Classes, Method and Attributes and it make them unchangable and it is used when we dont want to assign a same value to a particular variable.
+
+12. Wrapper:--
+Ans:
+Wrapper classes make the primitive data type act as Onjects because most of the time we need to use the primitive type as Objects for a programme. It makes the JAVA 100 % OOPS.
+
+

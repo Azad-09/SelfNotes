@@ -1,0 +1,25 @@
+1. Exceptions:--
+Ans:
+Exception is an Object in Java, An Exception is an Unwanted Event that occurs during the exxecution of a Programme and it disturb the normal flow of the code and terminate the code abruptly. Exception can happen either during Compilation or Execution.
+
+2. Exception Hndling:--
+Ans: 
+Exception Handling is a technique or process of bypassing the Exception which occurs during the execution of the programme and allowing the flow of the programme instead of abrptly terminating.
+
+Advantages:-
+It doesn't stop the flow of the code abruptly , It termiante the code gracefully after giving an appropriate message . And it simplifiies the location of the errors.
+
+3. Checked Exception:-
+Ans:
+Checked Exception is a process/scenarios of handling the Exception during the complation of the code. During the compilation the code doesn't throw any exception but it gives the coder a warning to handle the piece of <risky code> which have a chance of giving exception. 
+
+Compiler never throw an Exception but it is the work of the compiler to give warning to the coder for reporting that piece of <risky code> which have a high chance of giving an Exception like <FileInputStrem> consist of a File Path which have a chance of giving an Exception.
+
+Example:- ClassNotFoundException, IOException(FileNotFoundException) etc. This are some Exception which can be handled by the compiler or we can say which is in the range of Compiler. And those exception which is ignored by the Compiler is know as Runtime Exception.
+
+4.Unchecked Exception:-
+Ans:
+This are the exception which is not checked by the Compiler or handled during the compilation of the code. And it also clear the compilation process but throws Exception while Executing the code and that is the reason it is called as <Runtime Exception>.
+
+Example:- Some of the Exception like <ArithmeticException> <ArrayOutOfBoundException> is not handled by the compiler instead it is handled by the JVM directly during the runtime of the Code and it will throw the exception aftter that.
+
